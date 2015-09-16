@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="594.0" prefWidth="1140.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="192.0" minWidth="10.0" prefWidth="98.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="304.0" minWidth="10.0" prefWidth="167.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="178.0" minWidth="0.0" prefWidth="59.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="490.0" minWidth="10.0" prefWidth="490.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="339.0" minWidth="10.0" prefWidth="182.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ComboBox prefWidth="150.0" />
+            <TextField GridPane.columnIndex="1" />
+            <Label text="e-mail" GridPane.columnIndex="2" />
+            <TextField prefHeight="26.0" prefWidth="300.0" GridPane.columnIndex="3" />
+            <Label text="Razon Social" GridPane.rowIndex="1" />
+            <TextField prefHeight="26.0" prefWidth="656.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="1" />
+            <Label text="Direccion" GridPane.rowIndex="2" />
+            <TextField GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="2" />
+            <TextField alignment="CENTER_RIGHT" editable="false" prefHeight="91.0" prefWidth="193.0" style="-fx-font-size: 35;" text="\$50.2" GridPane.columnIndex="4" GridPane.rowSpan="3">
+               <GridPane.margin>
+                  <Insets left="5.0" right="5.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </TextField>
+         </children>
+      </GridPane>
+   </top>
+   <padding>
+      <Insets bottom="50.0" left="50.0" right="50.0" top="10.0" />
+   </padding>
+   <center>
+      <TabPane prefHeight="460.0" prefWidth="808.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Factura">
+            <content>
+                  <BorderPane>
+                     <top>
+                        <Pane prefHeight="39.0" prefWidth="708.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button layoutX="4.0" layoutY="6.0" mnemonicParsing="false" text="..." />
+                              <TextField layoutX="37.0" layoutY="6.0" prefHeight="26.0" prefWidth="118.0" />
+                              <TextField layoutX="161.0" layoutY="6.0" prefHeight="26.0" prefWidth="189.0" />
+                              <Label layoutX="444.0" layoutY="13.0" text="Cant" />
+                              <TextField layoutX="476.0" layoutY="7.0" prefHeight="26.0" prefWidth="60.0" />
+                              <Label layoutX="537.0" layoutY="14.0" text="V.Unit." />
+                              <TextField layoutX="584.0" layoutY="8.0" prefHeight="26.0" prefWidth="60.0" />
+                              <Label layoutX="651.0" layoutY="13.0" text="Dscto." />
+                              <TextField layoutX="697.0" layoutY="7.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="351.0" layoutY="12.0" text="IVA" />
+                              <ComboBox layoutX="376.0" layoutY="8.0" prefHeight="26.0" prefWidth="66.0" />
+                              <Label layoutX="752.0" layoutY="11.0" text="Info.Adi." />
+                              <TextField layoutX="811.0" layoutY="7.0" prefHeight="26.0" prefWidth="143.0" />
+                              <Button layoutX="961.0" layoutY="6.0" mnemonicParsing="false" text="+" />
+                              <Button layoutX="995.0" layoutY="6.0" mnemonicParsing="false" text="-" />
+                           </children>
+                        </Pane>
+                     </top>
+                     <center>
+                        <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="Cantidad" />
+                            <TableColumn prefWidth="151.0" text="Codigo" />
+                              <TableColumn prefWidth="524.0" text="Descripcion" />
+                              <TableColumn prefWidth="110.0" text="P.Unitario" />
+                              <TableColumn prefWidth="75.0" text="Dscto." />
+                              <TableColumn prefWidth="75.0" text="Total" />
+                          </columns>
+                        </TableView>
+                     </center>
+                  </BorderPane>
+            </content>
+          </Tab>
+          <Tab text="Cobros">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </TabPane>
+   </center>
+</BorderPane>
